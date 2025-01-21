@@ -49,5 +49,9 @@ export const colortheme =  {
     button_text:'var(--buttontext)',
     button_hover:'var(--buttonhover)',
     chatinputbg:'var(--chatinputbg)',
-    popoverborder:'var(--popoverborder)'
+    popoverborder:'var(--popoverborder)',
+
+    //bordercolor
+border100:'var(--border100)',
+
   }
