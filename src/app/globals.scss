@@ -1,0 +1,299 @@
+@font-face {
+  font-family: "violet_sansregular";
+  src: url("../../public/fonts/violetsans-regular-webfont.eot");
+  src: url("../../public/fonts/violetsans-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/violetsans-regular-webfont.woff2") format("woff2"),
+    url("../../public/fonts/violetsans-regular-webfont.woff") format("woff"),
+    url("../../public/fonts/violetsans-regular-webfont.ttf") format("truetype"),
+    url("../../public/fonts/violetsans-regular-webfont.svg#violet_sansregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #fff;
+    --foreground: #000;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+    --secondary-text:#BEDAF4;
+    --colorD8ECF8: #000;
+    --buttonborder: #b9bcc4;
+    --buttontext: #353c43;
+    --chatinputbg: #d0d3dd33;
+    --buttonhover:#00489D99;
+    --popoverborder:#546A8566;
+  }
+
+  .dark {
+    --background: #05090f;
+    --foreground: #828992;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --secondarytext:#BEDAF4;
+    --border: #1b2128;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --colorD8ECF8: #d8ecf8;
+    --color828992: #828992;
+    --buttonborder: #546a85;
+    --buttontext: #fff;
+    --color595F68: #595f68;
+    --colorInputBg: rgba(186, 214, 247, 0.03);
+    --colorInputColor: rgba(152, 192, 239, 0.5);
+    --chatinputbg: #bad6f708;
+    --color343B42: #343b42;
+    --deepBlue: #1f78ff;
+    --colorB7D5F3: #b7d5f3;
+    --colorInputColor: rgba(152, 192, 239, 0.5);
+    --chatinputbg: #bad6f708;
+    --buttonhover:#00489D99;
+    --popoverborder:#546A8566;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply dark text-foreground bg-body_bg font-violetsans overflow-x-hidden;
+  }
+  h1 {
+    @apply text-[3.056vw];
+  }
+  .cmn_form {
+    @apply mb-[2.083vw];
+  }
+  .cmn_form p {
+    @apply font-dmmono text-[0.972vw] uppercase text-color595F68 mb-[0.556vw];
+  }
+  .cmn_input {
+    @apply w-full h-[3.333vw] bg-colorInputBg border border-border rounded-md py-[0.833vw] px-[1.111vw] text-[1.111vw] text-colorInputColor placeholder:text-colorInputColor font-normal outline-none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.gardient_background_dim {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  &::after {
+    position: absolute;
+    content: "";
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(31, 120, 255, 0.15) 0%,
+      rgba(29, 113, 240, 0.15) 14.5%,
+      rgba(19, 72, 153, 0) 100%
+    );
+    height: 100vh;
+    width: 100vw;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    top: 50%;
+    z-index: -1;
+  }
+}
+.gardient_background {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(31, 120, 255, 0.15) 0%,
+      rgba(29, 113, 240, 0.15) 14.5%,
+      rgba(19, 72, 153, 0) 100%
+    );
+    height: 100vh;
+    width: 100vw;
+    left: -100vw;
+    // transform: translateX(-50%);
+    top: 0;
+    z-index: -1;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    transform: translateX(-46%);
+    top: 2vw;
+    @apply size-[32.153vw] bg-text_primary rounded-full blur-[8.475vw];
+    z-index: -1;
+  }
+
+  margin: 0 auto;
+}
+
+.gradient_color {
+  background: linear-gradient(0deg, #d8ecf8 0%, #98c0ef 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.layer_box {
+  background: rgba(255, 255, 255, 0.004);
+  box-shadow: inset 0px 0.697959px 0.697959px rgba(199, 211, 234, 0.12),
+    inset 0px 16.751px 33.502px rgba(199, 211, 234, 0.05);
+  backdrop-filter: blur(3.4898px);
+}
+
+.elem-1 {
+  left: 0;
+  top: 0;
+}
+.elem-2 {
+  right: 0;
+  top: 0;
+}
+.elem-3 {
+  left: 0;
+  bottom: 0;
+}
+.elem-4 {
+  right: 0;
+  bottom: 0;
+}
+.elem::after {
+  background-image: url("../../public/assets/images/reactor_hand.svg");
+  z-index: -1;
+}
+.elem-1::after {
+  transform: rotateY(180deg);
+  left: 9.5vw !important;
+}
+.elem-3::after {
+  transform: rotate(180deg);
+  left: 9.5vw !important;
+  top: -80% !important;
+}
+.elem-4::after {
+  transform: rotateX(180deg);
+  left: 5.5vw !important;
+  top: -82% !important;
+}
+.elem-1 {
+  left: 0;
+  top: 4vh;
+}
+
+.elem-2 {
+  right: 0;
+  top: 2vh;
+}
+.elem-3 {
+  left: 0;
+  bottom: -2vh;
+}
+.elem-4 {
+  right: 0;
+  bottom: -5vh;
+}
+
+.image_block::after {
+  content: "";
+  position: absolute;
+  width: 55.764vw;
+  height: 55.764vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(31, 120, 255, 0.15) 0%,
+    rgba(29, 113, 240, 0.15) 14.5%,
+    rgba(19, 72, 153, 0) 100%
+  );
+  z-index: -1;
+}
+
+.chat_body::after {
+  content: "";
+  position: absolute;
+  width: 43.75vw;
+  height: 43.75vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(31, 120, 255, 0.4) 0%,
+    rgba(29, 113, 240, 0.4) 14.5%,
+    rgba(19, 72, 153, 0) 100%
+  );
+  z-index: -1;
+  pointer-events: none;
+}
+
