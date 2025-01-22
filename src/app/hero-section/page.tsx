@@ -2,7 +2,7 @@
 
 import Container from '@/components/Container/Container'
 import React from 'react'
-import RightArrowIocn from '../../../public/assets/icon/RightArrowIocn';
+import RightArrowIcon from '../../../public/assets/icon/RightArrowIocn';
 import PlayIcon from '../../../public/assets/icon/PlayIcon';
 import Image from 'next/image';
 import bannerImage from '../../../public/assets/images/bannerimage.png'
@@ -14,7 +14,7 @@ function page() {
       <div className='w-full py-24 '>
         <div className=' flex items-center justify-center gap-3 rounded-2xl bg-violet-50 px-4 py-1.5 w-auto max-w-max mx-auto'>
           <div className='py-0.5 px-2.5 rounded-2xl font-medium border border-solid text-lg border-slate-400 text-purple-950 '>New feature</div>
-          <button className=' flex items-center gap-1 font-medium text-purple-950 text-lg hover:opacity-50'>Check out the team dashboard <RightArrowIocn/></button>
+          <button className=' flex items-center gap-1 font-medium text-purple-950 text-lg hover:opacity-50'>Check out the team dashboard <RightArrowIcon/></button>
         </div>
 
         <div className='pt-4 pb-16'>

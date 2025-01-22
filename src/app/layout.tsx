@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import type { Metadata } from "next";
 import "./globals.scss";
+import Header from "@/components/Layout/Header";
 
 export const metadata: Metadata = {
   title: "react ui",
@@ -23,6 +24,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <Header></Header>
        {children}
       </body>
     </html>
