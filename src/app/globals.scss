@@ -53,7 +53,10 @@
     --chatinputbg: #d0d3dd33;
     --buttonhover:#00489D99;
     --popoverborder:#546A8566;
-    --border100:"#D0D5DD"
+
+    //custom color
+    --border100:#D0D5DD;
+    --purple500:#010917;
   }
 
   .dark {
@@ -99,6 +102,9 @@
     --chatinputbg: #bad6f708;
     --buttonhover:#00489D99;
     --popoverborder:#546A8566;
+    //custom color
+    --border100:#010917;
+     --purple500:#010917
   }
 }
 
@@ -141,160 +147,4 @@
   background: rgba(0, 0, 0, 0.4);
 }
 
-.gardient_background_dim {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  &::after {
-    position: absolute;
-    content: "";
-    background: radial-gradient(
-      50% 50% at 50% 50%,
-      rgba(31, 120, 255, 0.15) 0%,
-      rgba(29, 113, 240, 0.15) 14.5%,
-      rgba(19, 72, 153, 0) 100%
-    );
-    height: 100vh;
-    width: 100vw;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    top: 50%;
-    z-index: -1;
-  }
-}
-.gardient_background {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-
-  &::after {
-    position: absolute;
-    content: "";
-    background: radial-gradient(
-      50% 50% at 50% 50%,
-      rgba(31, 120, 255, 0.15) 0%,
-      rgba(29, 113, 240, 0.15) 14.5%,
-      rgba(19, 72, 153, 0) 100%
-    );
-    height: 100vh;
-    width: 100vw;
-    left: -100vw;
-    // transform: translateX(-50%);
-    top: 0;
-    z-index: -1;
-  }
-  &::before {
-    position: absolute;
-    content: "";
-    left: 50%;
-    transform: translateX(-46%);
-    top: 2vw;
-    @apply size-[32.153vw] bg-text_primary rounded-full blur-[8.475vw];
-    z-index: -1;
-  }
-
-  margin: 0 auto;
-}
-
-.gradient_color {
-  background: linear-gradient(0deg, #d8ecf8 0%, #98c0ef 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
-.layer_box {
-  background: rgba(255, 255, 255, 0.004);
-  box-shadow: inset 0px 0.697959px 0.697959px rgba(199, 211, 234, 0.12),
-    inset 0px 16.751px 33.502px rgba(199, 211, 234, 0.05);
-  backdrop-filter: blur(3.4898px);
-}
-
-.elem-1 {
-  left: 0;
-  top: 0;
-}
-.elem-2 {
-  right: 0;
-  top: 0;
-}
-.elem-3 {
-  left: 0;
-  bottom: 0;
-}
-.elem-4 {
-  right: 0;
-  bottom: 0;
-}
-.elem::after {
-  background-image: url("../../public/assets/images/reactor_hand.svg");
-  z-index: -1;
-}
-.elem-1::after {
-  transform: rotateY(180deg);
-  left: 9.5vw !important;
-}
-.elem-3::after {
-  transform: rotate(180deg);
-  left: 9.5vw !important;
-  top: -80% !important;
-}
-.elem-4::after {
-  transform: rotateX(180deg);
-  left: 5.5vw !important;
-  top: -82% !important;
-}
-.elem-1 {
-  left: 0;
-  top: 4vh;
-}
-
-.elem-2 {
-  right: 0;
-  top: 2vh;
-}
-.elem-3 {
-  left: 0;
-  bottom: -2vh;
-}
-.elem-4 {
-  right: 0;
-  bottom: -5vh;
-}
-
-.image_block::after {
-  content: "";
-  position: absolute;
-  width: 55.764vw;
-  height: 55.764vw;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(31, 120, 255, 0.15) 0%,
-    rgba(29, 113, 240, 0.15) 14.5%,
-    rgba(19, 72, 153, 0) 100%
-  );
-  z-index: -1;
-}
-
-.chat_body::after {
-  content: "";
-  position: absolute;
-  width: 43.75vw;
-  height: 43.75vw;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(31, 120, 255, 0.4) 0%,
-    rgba(29, 113, 240, 0.4) 14.5%,
-    rgba(19, 72, 153, 0) 100%
-  );
-  z-index: -1;
-  pointer-events: none;
-}
 

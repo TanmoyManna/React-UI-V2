@@ -53,5 +53,6 @@ export const colortheme =  {
 
     //bordercolor
 border100:'var(--border100)',
+purple500:'var(--purple500)'
 
   }
