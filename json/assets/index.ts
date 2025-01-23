@@ -1,6 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 
+
 export default {
-    bannerimage:"/"
+    Landingbannerimage:"@/../../public/assets/images/landingbannerImage.png"
 };
 
