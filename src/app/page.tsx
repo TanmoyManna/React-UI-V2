@@ -1,6 +1,6 @@
 import Container from '@/components/Container/Container'
 import React from 'react'
-import assets from '../../json/assets'
+import assets from '@/json/assets'
 import bannerimage from '../../public/assets/images/landingbannerImage.png'
 import gradientColorBG from '../../public/assets/images/bannerligt.jpg'
 import Header from '@/components/Layout/Header'
