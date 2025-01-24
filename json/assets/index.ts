@@ -2,7 +2,7 @@
 
 
 export default {
-    Landingbannerimage:"@/../../public/assets/images/landingbannerImage.png",
+    Landingbannerimage:"/assets/images/landingbannerImage.png",
     logoimage:"/assets/images/fullLogo.png"
 
 };

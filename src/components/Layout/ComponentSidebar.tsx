@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import assets from "@/json/assets";
+import assets from '../../../json/assets'
 export const individualRoute = [
     {
         pathname: "Button",
