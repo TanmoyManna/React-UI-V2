@@ -1,31 +1,38 @@
 "use client";
-import { useState } from "react";
-import Link from "next/link";
 
-const searchOptions = [
-  "Option 1",
-  "Option 2",
-  "Option 3",
-  "Option 4",
-];
+import React, { forwardRef } from "react";
+import { Badge, Button, Input } from "react-ui";
+import NotificationIocn from "../../../public/assets/icon/NotificationIocn";
+import SettingIcon from "../../../public/assets/icon/SettingIcon";
 
-const ComponentHeader = () => {
+interface componentheaderprops extends React.HTMLAttributes<HTMLDivElement> {}
 
-  return (
-    <header className="fixed top-0 left-0 w-full bg-white  shadow-md py-4 px-6 flex items-center justify-center">
-
-      <div className="relative w-72">
-        <div className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500">
-          {/* <FaSearch /> */}
+export const ComponentHeader = forwardRef<HTMLDivElement, componentheaderprops>(
+  ({ ...props }, ref) => {
+    return (
+      <div
+        className="flex justify-end items-center gap-10 py-4 px-10"
+        ref={ref}
+      >
+        <div className="flex items-center">
+          <Input className=" border-slate-900" />
         </div>
-        <input
-          type="text"
-          placeholder="Search..."
-          className="w-full py-2 pl-10 pr-4 border rounded-lg focus:outline-none"
-        />
+        <div className="flex items-center gap-4 ">
+          <Badge
+            badgeContent={4}
+            color="secondary"
+            position="topRight"
+            size="md"
+            badgeStyle="-top-2 -right-1 bg-slate-600 min-w-3 min-h-3 px-2 py-[5px] text-[12px]   leading-[1] rounded-full"
+          >
+            <NotificationIocn />
+          </Badge>
+          <Button size="md" variant="outline" className="p-0 ">
+            <SettingIcon />
+          </Button>
+        </div>
       </div>
-    </header>
-  );
-};
-
-export default ComponentHeader;
+    );
+  }
+);
+ComponentHeader.displayName = "ComponentHeader";

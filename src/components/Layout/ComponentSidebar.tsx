@@ -1,9 +1,12 @@
 "use client";
-import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { usePathname } from "next/navigation";
+import React, { ComponentProps, forwardRef } from 'react'
 import assets from '../../../json/assets'
+import { ComponentSidebarWrapper } from '@/styles/StyleComponents/DashboardWrapper';
+import Image from 'next/image';
+import { Button, List, ListItem } from 'react-ui';
+import Link from 'next/link';
+import CustomAccordion from '../Accordian/Accordian';
+import { accordionItems } from '@/mock/demo.mock';
 export const individualRoute = [
     {
         pathname: "Button",
@@ -19,49 +22,49 @@ export const individualRoute = [
     },
 ];
 
-const ComponentSidebar = () => {
 
-    const router = usePathname();
+interface ComponentSidebarProps extends React.HTMLAttributes<HTMLDivElement> {}
+
+export const ComponentSidebar = forwardRef<HTMLDivElement, ComponentSidebarProps>(
+  ({ ...props }, ref) => {
+    const individualRoute = [
+      // Sample route data, replace with your actual data
+      { path: '/home', pathname: 'Home' },
+      { path: '/about', pathname: 'About' },
+      { path: '/contact', pathname: 'Contact' },
+    ];
 
     return (
-        <>
-            <div
-                className={`fixed top-0 left-0 z-10 bg-primary transition-all duration-400 p-4 h-screen w-48`}
-            >
-                <div className="mb-16 flex justify-center">
-                    <Link href="/">
-                        <Image
-                            src={assets.logoimage}
-                            width="131"
-                            height="15"
-                            alt="Logo"
-                        />
-                    </Link>
-                </div>
-                <nav className="flex flex-col space-y-4">
-                    <ul>
-                        {individualRoute.map((item) => (
-                            <li key={item.pathname} className="mb-2">
-                                <Link
-                                    href={item.path}
-                                    className={`flex items-center p-3 rounded transition-colors ${router === item.path ? "bg-primary-dark" : "hover:bg-primary-dark"}`}
-                                >
-                                    <span className={`ml-4 text-white text-sm transition-all block`}>{item.pathname}</span>
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                    <ul>
-                        <li>
-                            <Link href="/settings-vendor" className="flex items-center p-3 rounded hover:bg-primary-dark">
-                                <span className={`ml-4 text-white text-sm block`}>Settings</span>
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </>
-    );
-};
+      <ComponentSidebarWrapper ref={ref} {...props} className='fixed w-80'>
+        <div className="w-full p-4 h-screen">
+          {/* Header Section */}
+          <div className="flex justify-between items-center ">
+            <figure className="leading-none w-40 h-auto">
+              <Image
+                width={200}
+                height={100}
+                alt="Brand Logo"
+                src={assets.logoimage}
+                className='w-full h-full object-contain'
+              />
+            </figure>
+          
+          </div>
 
-export default ComponentSidebar;
+          {/* Navigation List */}
+        <div className='mt-5'>
+        <CustomAccordion>
+    {accordionItems.map((data,index:number)=>(
+          <CustomAccordion.Item id={data.id} summary={data.summary} key={index}>
+         {data.details}
+        </CustomAccordion.Item>
+    ))}
+     
+      </CustomAccordion>
+        </div>
+        </div>
+      </ComponentSidebarWrapper>
+    );
+  }
+);
+ComponentSidebar.displayName = 'ComponentSidebar';

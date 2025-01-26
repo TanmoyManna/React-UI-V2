@@ -16,7 +16,7 @@ function Header() {
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+           
             <img
               alt=""
               src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
