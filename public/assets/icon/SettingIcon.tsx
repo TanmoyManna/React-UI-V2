@@ -23,7 +23,7 @@ function SettingIcon() {
           </clipPath>
         </defs>
         <g
-          clip-path="url(#a)"
+          clipPath="url(#a)"
           transform="matrix(1.33333 0 0 -1.33333 0 682.667)"
         >
           <path
@@ -31,13 +31,12 @@ function SettingIcon() {
             transform="translate(256 334.666)"
             fill="none"
             stroke="#000000"
-            stroke-width="40"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-miterlimit="10"
-            stroke-dasharray="none"
-            stroke-opacity=""
-            data-original="#000000"
+            strokeWidth="40"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeMiterlimit="10"
+            strokeDasharray="none"
+            strokeOpacity=""
           ></path>
         </g>
       </g>

@@ -9,7 +9,7 @@ export const accordionItems = [
         </>
       ),
       details: (
-       <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href="javascript:void(0)">
+       <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href="">
         Home
        </Link>
       ),
