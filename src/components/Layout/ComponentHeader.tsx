@@ -27,7 +27,7 @@ export const ComponentHeader = forwardRef<HTMLDivElement, componentheaderprops>(
           >
             <NotificationIocn />
           </Badge>
-          <Button size="md" variant="outline" className="p-0 ">
+          <Button size="md" variant="ghost" className="p-0 hover:bg-transparent hover:opacity-50 min-w-[auto] ">
             <SettingIcon />
           </Button>
         </div>

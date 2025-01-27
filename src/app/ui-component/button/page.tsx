@@ -1,18 +1,18 @@
 "use client"
 import { DashboardWrapper } from '@/components/Layout/Wrapper'
-import { CodePreview } from '@/components/PreviewComponent/PreviewComponent'
+import PreviewEditor from '@/components/PreviewComponent/PreviewComponent'
+
 import { CommonSectionWrapper } from '@/styles/StyleComponents/CommonStyle'
 import React from 'react'
 import { Button } from 'react-ui'
 
 
 const buttonCode = `
-import { Button } from "./Button";
-
 <Button 
   variant="solid" 
   size="md" 
   colorscheme="primary"
+  className='w-auto'
 >
   Button
 </Button>
@@ -21,19 +21,17 @@ import { Button } from "./Button";
 function page() {
   return (
    <DashboardWrapper>
-    <CommonSectionWrapper>
-       <div>
-       <h2>
+    <CommonSectionWrapper className='mb-3'>
+     
+       <h2 className="text-3xl font-extrabold leading-[1.4] text-black mb-2">
         Button
         </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, consectetur.</p>
-       </div>
+        <p className='font-normal text-base leading-snug'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, consectetur.</p>
+       
     </CommonSectionWrapper>
     <div className='border border-solid border-gray-500'>
-    <Button variant="solid" size="md" >
-          Button
-        </Button>
-        <CodePreview code={buttonCode} />
+   
+       <PreviewEditor code={buttonCode} scope={{Button}}/>
     </div>
    </DashboardWrapper>
   )

@@ -40,7 +40,7 @@ export const DashboardWrapper: React.FC<dashboardinterface> = ({  ...props }) =>
         <ComponentSidebar />
         <div  className='w-full ml-80 h-screen'>
           <ComponentHeader ref={headerRef}/>
-          <div style={{maxHeight:`calc(100vh - ${headerHeight}px)`}} className='h-full py-5 px-10 overflow-auto'>
+          <div style={{maxHeight:`calc(100vh - ${headerHeight}px)`}} className='h-full py-5 px-32 overflow-auto'>
           {props.children}
           </div>
         </div>
