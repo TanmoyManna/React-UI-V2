@@ -23,7 +23,7 @@ export const ComponentHeader = forwardRef<HTMLDivElement, componentheaderprops>(
             color="secondary"
             position="topRight"
             size="md"
-            badgeStyle="-top-2 -right-1 bg-slate-600 min-w-3 min-h-3 px-2 py-[5px] text-[12px]   leading-[1] rounded-full"
+            badgeStyle="px-[5px] py-[2px]"
           >
             <NotificationIocn />
           </Badge>

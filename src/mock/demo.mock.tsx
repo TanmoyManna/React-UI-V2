@@ -42,9 +42,9 @@ export const accordionItems = [
         </>
       ),
       details: (
-        <p>
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, animi!
-        </p>
+        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/api-doc/button'>
+        Button
+       </Link>
       ),
     },
 

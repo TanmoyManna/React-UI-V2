@@ -1,10 +1,13 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 "use client"
 import { DashboardWrapper } from '@/components/Layout/Wrapper'
 import PreviewEditor from '@/components/PreviewComponent/PreviewComponent'
 
 import { CommonSectionWrapper } from '@/styles/StyleComponents/CommonStyle'
+import { useRouter } from 'next/navigation'
+
 import React from 'react'
-import { Button } from 'react-ui'
+import { Button, Chip } from 'react-ui'
 
 
 const buttonCode = `
@@ -19,6 +22,7 @@ const buttonCode = `
 `;
 
 function page() {
+  const router = useRouter()
   return (
    <DashboardWrapper>
     <CommonSectionWrapper className='mb-3'>
@@ -33,7 +37,18 @@ function page() {
    
        <PreviewEditor code={buttonCode} scope={{Button}}/>
     </div>
+    <div className='flex justify-end items-center space-x-3 py-10'>
+    <Chip
+    onClick={()=>(router.push('/api-doc/button'))}
+  iconPosition="start"
+  variant="outline"
+    colorscheme="blue"
+>
+Button Api doc 
+</Chip>
+    </div>
    </DashboardWrapper>
+   
   )
 }
 
