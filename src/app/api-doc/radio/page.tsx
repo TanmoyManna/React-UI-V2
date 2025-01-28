@@ -9,12 +9,12 @@ function page() {
 
     const headers = ["Name", "Type", "Default", "Description"];
     const data = [
-      { Name: "label", Type: "string", Default: "-", Description: "The label of the checkbox." },
+      { Name: "label", Type: "string", Default: "-", Description: "The label of the Radio." },
       { Name: "containerClassName", Type: "Tailwind Classes", Default: "-", Description:"Override or extend the styles applied to the component container."  },
       { Name: "labelClass", Type: "Tailwind Classes", Default: "-", Description:"Override or extend the styles applied to the component label."  },
       { Name: "labelPosition", Type: "end | start", Default: "end", Description: "Label Element positioned on the start or the end." },
-      { Name: "checkedIcon", Type: "React.ReactNode", Default: "-", Description:"The icon to display when the component is checked."  },
-      { Name: "unCheckedIcon", Type: "React.ReactNode", Default: "-", Description:"The icon to display when the component is unchecked."  },
+      { Name: "checkedIcon", Type: "React.ReactNode", Default: "-", Description:"The icon to display when the component is active."  },
+      { Name: "unCheckedIcon", Type: "React.ReactNode", Default: "-", Description:"The icon to display when the component is inactive."  },
       { Name: "iconStyleClass", Type: "Tailwind Classes", Default: "-", Description:"Override or extend the styles applied to the component icon."  },
 
     ];
@@ -25,9 +25,9 @@ function page() {
         <CommonSectionWrapper className='mb-10'>
          
            <h2 className="text-3xl font-extrabold leading-[1.4] text-black mb-2">
-           Checkbox API
+           Radio API
             </h2>
-            <p className='font-normal text-base leading-snug'>API reference docs for the Checkbox component</p>
+            <p className='font-normal text-base leading-snug'>API reference docs for the Radio component</p>
            
         </CommonSectionWrapper>
 

@@ -29,6 +29,9 @@ export const accordionItems = [
         <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/ui-component/checkbox'>
           CheckBox
         </Link>
+        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/ui-component/radio'>
+          Radio
+        </Link>
       </>
     ),
   },
@@ -47,6 +50,9 @@ export const accordionItems = [
         </Link>
         <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/api-doc/checkbox'>
           CheckBox
+        </Link>
+        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/api-doc/radio'>
+          Radio
         </Link>
       </>
     ),
