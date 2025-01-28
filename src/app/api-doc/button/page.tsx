@@ -7,13 +7,13 @@ import React from 'react'
 
 function page() {
 
-    const headers = ["Name", "Description", "Default", "Control"];
+    const headers = ["Name", "Type", "Default", "Description"];
     const data = [
-      { Name: "variant", Description: "string", Default: "-", Control: "solid" },
-      { Name: "size", Description: "string", Default: "-", Control: "md" },
-      { Name: "children", Description: "string", Default: "-", Control: "Button" },
-      { Name: "icon", Description: "React.ReactNode", Default: "-", Control: "Set object" },
-      { Name: "iconPosition", Description: "union", Default: "-", Control: "start | end" },
+      { Name: "children", Type: "node", Default: "-", Description: "The content of the component." },
+      { Name: "variant", Type: "solid | outline | ghost", Default: "solid", Description:"The variant to use."  },
+      { Name: "size", Type: "sm | md | lg", Default: "md", Description:"The size of the component."  },
+      { Name: "icon", Type: "React.ReactNode", Default: "-", Description: "Icon Element placed with the children." },
+      { Name: "iconPosition", Type: "start | end", Default: "-", Description:"The Icon positioned on the start or the end of the button."  },
     ];
 
   return (
