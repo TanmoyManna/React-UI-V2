@@ -41,6 +41,12 @@ export const accordionItems = [
         <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/components/list'>
           List
         </Link>
+        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/components/text'>
+          Text
+        </Link>
+        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/components/switch'>
+          Switch
+        </Link>
       </>
     ),
   },
@@ -71,6 +77,12 @@ export const accordionItems = [
         </Link>
         <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/api-doc/list'>
           List
+        </Link>
+        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/api-doc/text'>
+          Text
+        </Link>
+        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/api-doc/switch'>
+          Switch
         </Link>
       </>
     ),
