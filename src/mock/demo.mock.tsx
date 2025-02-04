@@ -23,17 +23,20 @@ export const accordionItems = [
     ),
     details: (
       <>
-        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/ui-component/button'>
+        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/components/button'>
           Button
         </Link>
-        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/ui-component/checkbox'>
+        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/components/checkbox'>
           CheckBox
         </Link>
-        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/ui-component/radio'>
+        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/componentst/radio'>
           Radio
         </Link>
-        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/ui-component/autocomplete'>
+        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/components/autocomplete'>
           Autocomplete
+        </Link>
+        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/components/badge'>
+          Badge
         </Link>
       </>
     ),
@@ -59,6 +62,9 @@ export const accordionItems = [
         </Link>
         <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/api-doc/autocomplete'>
           Autocomplete
+        </Link>
+        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/api-doc/badge'>
+          Bagde
         </Link>
       </>
     ),
