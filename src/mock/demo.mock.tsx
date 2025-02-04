@@ -106,6 +106,9 @@ export const accordionItems = [
         <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/templates/pricing'>
           Pricing
         </Link>
+        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/templates/header'>
+          Header
+        </Link>
       </>
     ),
   },
