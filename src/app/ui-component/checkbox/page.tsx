@@ -17,6 +17,7 @@ const checkbox = `
 const checkboxEndLable = `
 <CheckBox
 label='lableText'
+labelClass='text-white'
 >
 </CheckBox>
 `;
@@ -24,6 +25,7 @@ const checkboxStartLable = `
 <CheckBox
 label='lableText'
 labelPosition='start'
+labelClass='text-white'
 >
 </CheckBox>
 `;
@@ -31,6 +33,7 @@ const checkboxWithCustomIcon = `
 <CheckBox
 label='lableText'
 labelPosition='start'
+labelClass='text-white'
 checkedIcon={<Icon name="home" size={25} color="blue-600" key="icon" />}
 unCheckedIcon={<Icon name="search" size={25} color="blue-600" key="icon" />}
 >

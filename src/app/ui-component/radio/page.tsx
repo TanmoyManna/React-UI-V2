@@ -17,6 +17,7 @@ const radio = `
 const radioEndLable = `
 <Radio
 label='lableText'
+labelClass='text-white'
 >
 </Radio>
 `;
@@ -24,6 +25,7 @@ const radioStartLable = `
 <Radio
 label='lableText'
 labelPosition='start'
+labelClass='text-white'
 >
 </Radio>
 `;
@@ -31,6 +33,7 @@ const radioWithCustomIcon = `
 <Radio
 label='lableText'
 labelPosition='start'
+labelClass='text-white'
 checkedIcon={<Icon name="home" size={25} color="blue-600" key="icon" />}
 unCheckedIcon={<Icon name="search" size={25} color="blue-600" key="icon" />}
 >
