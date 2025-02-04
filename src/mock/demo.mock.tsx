@@ -87,5 +87,27 @@ export const accordionItems = [
       </>
     ),
   },
+  {
+    id: "panel4",
+    summary: (
+      <>
+        <span className="w-1/3 flex-shrink-0">Templates</span>
+
+      </>
+    ),
+    details: (
+      <>
+        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/templates/hero'>
+          Hero
+        </Link>
+        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/templates/newsletter'>
+          Newsletter
+        </Link>
+        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/templates/pricing'>
+          Pricing
+        </Link>
+      </>
+    ),
+  },
 
 ];

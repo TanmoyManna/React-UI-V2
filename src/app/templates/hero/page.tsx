@@ -1,15 +1,21 @@
-"use client";
+"use client"
+import { DashboardWrapper } from '@/components/Layout/Wrapper'
+import PreviewEditor from '@/components/PreviewComponent/PreviewComponent'
+
+import { CommonSectionWrapper } from '@/styles/StyleComponents/CommonStyle'
+import { useRouter } from 'next/navigation'
+
+import React from 'react'
+
 
 import Container from '@/components/Container/Container'
-import React from 'react'
-import RightArrowIcon from '../../../public/assets/icon/RightArrowIocn';
-import PlayIcon from '../../../public/assets/icon/PlayIcon';
+import RightArrowIcon from '../../../../public/assets/icon/RightArrowIocn';
+import PlayIcon from '../../../../public/assets/icon/PlayIcon';
 import Image from 'next/image';
-import bannerImage from '../../../public/assets/images/bannerimage.png'
+import bannerImage from '../../../../public/assets/images/bannerimage.png';
 
-function page() {
-  return (
-   <div className=' w-full bg-white '>
+const HeroSection1 = `
+<div className=' w-full bg-white '>
     <Container className=' max-w-[1312px] px-4 w-full mx-auto my-0'>
       <div className='w-full py-24 '>
         <div className=' flex items-center justify-center gap-3 rounded-2xl bg-violet-50 px-4 py-1.5 w-auto max-w-max mx-auto'>
@@ -31,7 +37,24 @@ function page() {
       </div>
     </Container>
    </div>
-  )
+`;
+
+function page() {
+    const router = useRouter()
+    return (
+        <DashboardWrapper>
+            {/* Basic Text */}
+            <CommonSectionWrapper className='mb-3'>
+                <h2 className="text-3xl font-extrabold leading-[1.4] text-black mb-2">
+                    Hero Section
+                </h2>
+                <p className='font-bold text-base leading-snug'>Hero Example 1</p>
+            </CommonSectionWrapper>
+            <div className='border border-solid border-gray-500 mb-3'>
+                <PreviewEditor code={HeroSection1} scope={{ Container,RightArrowIcon,PlayIcon,Image,bannerImage }} />
+            </div>
+        </DashboardWrapper>
+    )
 }
 
 export default page
