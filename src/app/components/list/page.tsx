@@ -10,6 +10,7 @@ import { ListItem, List, Chip } from 'react-ui'
 
 
 const UnorderedList = `
+<div className="w-50">
 <List
 variant="unordered"
 size="md"
@@ -20,9 +21,11 @@ spacing="normal">
     <ListItem disabledPadding={true}  className='text-white'>Should be</ListItem>
 </>
 </List>
+</div>
 `;
 
 const OrderedList = `
+<div className="w-50">
 <List
 variant="ordered"
 size="lg"
@@ -33,6 +36,7 @@ spacing="noSpace">
     <ListItem disabledPadding={true}  className='text-white'>Should be</ListItem>
 </>
 </List>
+</div>
 `;
 function page() {
     const router = useRouter()

@@ -10,26 +10,34 @@ import { Switch, Chip } from 'react-ui'
 
 
 const defaultSwitch = `
+<div className="w-50">
 <Switch />
+</div>
 `;
 
 const EndLabelSwitch = `
+<div className="w-50">
 <Switch
 label="lableText"
 labelPosition="end"/>
+</div>
 `;
 
 const StartLabelSwitch = `
+<div className="w-50">
 <Switch 
 label="lableText"
 labelPosition="start"/>
+</div>
 `;
 
 const InnerLabelSwitch = `
+<div className="w-50">
 <Switch 
 variant="secondary"
 activelabel="on"
 inactivelable="off"/>
+</div>
 `;
 
 function page() {

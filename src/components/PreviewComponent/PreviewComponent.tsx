@@ -89,7 +89,7 @@ const PreviewEditor = ({ ...props }: livecodeEditorProsp) => {
       <LiveProvider code={props.code} scope={props.scope}>
         <div className="space-y-1">
           <div className=' gap-1 px-2.5 py-5 flex items-center justify-center flex-wrap'>
-            <LivePreview />
+            <LivePreview className="w-full flex justify-center"/>
           </div>
           <LiveEditor theme={customTheme} className='border border-slate-200 border-solid border-r-0 border-l-0' />
           <LiveError />

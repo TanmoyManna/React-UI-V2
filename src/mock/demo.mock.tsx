@@ -29,7 +29,7 @@ export const accordionItems = [
         <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/components/checkbox'>
           CheckBox
         </Link>
-        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/componentst/radio'>
+        <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/components/radio'>
           Radio
         </Link>
         <Link className="w-full inline-block py-2 px-6 hover:bg-gray-200" href='/components/autocomplete'>

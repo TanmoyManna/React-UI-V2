@@ -10,6 +10,7 @@ import { Autocomplete, Chip, Icon } from 'react-ui'
 
 
 const autocomplete = `
+<div className="w-50">
 <Autocomplete
 label='Framework'
 options={[
@@ -26,9 +27,11 @@ dropDownIcon={<Icon name="upArrow" size={20} color="blue" key="icon" />}
 valueChange={(value) => console.log("value change:", value)}
 dropdownState={(state) => console.log("value change:", state)}
 />
+</div>
 `;
 
 const multAutocomplete = `
+<div className="w-50">
 <Autocomplete
 label='Framework'
 options={[
@@ -45,6 +48,7 @@ dropDownIcon={<Icon name="upArrow" size={20} color="blue" key="icon" />}
 valueChange={(value) => console.log("value change:", value)}
 dropdownState={(state) => console.log("value change:", state)}
 />
+</div>
 `;
 function page() {
     const router = useRouter()

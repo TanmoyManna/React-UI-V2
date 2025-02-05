@@ -3,7 +3,9 @@
 
 export default {
     Landingbannerimage:"/assets/images/landingbannerImage.png",
-    logoimage:"/assets/images/fullLogo.png"
+    logoimage:"/assets/images/fullLogo.png",
+    burgerIcon:"/assets/images/burger.jpeg"
+
 
 };
 
