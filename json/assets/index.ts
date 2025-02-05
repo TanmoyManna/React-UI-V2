@@ -9,10 +9,7 @@ export default {
     specialIcon:"/assets/images/sp.jpeg",
     limitedIcon:"/assets/images/limited.jpeg",
     exclusiveIcon:"/assets/images/exclusive.jpeg",
-    sneakersIcon:"/assets/images/sneakers.jpeg"
-
-
-
-
+    sneakersIcon:"/assets/images/sneakers.jpeg",
+    furnitureIcon:"/assets/images/furniture.png",
 };
 
